@@ -1,3 +1,9 @@
 *.csv
 
 gps*
+
+Ve471 Slides/
+
+__pycache__/
+
+.ipynb_checkpoints/
