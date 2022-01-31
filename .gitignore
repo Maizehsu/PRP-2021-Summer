@@ -6,4 +6,7 @@ Ve471 Slides/
 
 __pycache__/
 
+*.pyc
+*.pyo
+
 .ipynb_checkpoints/
