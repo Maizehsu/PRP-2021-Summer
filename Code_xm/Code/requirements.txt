@@ -4,8 +4,11 @@ astor==0.8.1
 astunparse==1.6.3
 async-generator==1.10
 attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+autopep8==1.6.0
 backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
 bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
+bokeh @ file:///C:/ci/bokeh_1620710237359/work
+brotlipy==0.7.0
 cached-property==1.5.2
 cachetools==4.2.4
 certifi==2021.5.30
@@ -15,6 +18,7 @@ clang==5.0
 colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
 coordTransform==0.1.3
 coverage @ file:///C:/ci/coverage_1614614921360/work
+cryptography @ file:///C:/ci/cryptography_1635366724772/work
 cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
 Cython @ file:///C:/ci/cython_1626257069493/work
 dataclasses @ file:///tmp/build/80754af9/dataclasses_1614363715916/work
@@ -23,14 +27,14 @@ defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
 entrypoints==0.3
 flatbuffers==1.12
 future==0.18.2
-gast==0.4.0
+gast @ file:///tmp/build/80754af9/gast_1637837472536/work
 GDAL==3.0.2
 google-auth==1.35.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.43.0
 h5py==3.1.0
-idna==3.3
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
 importlib-metadata @ file:///C:/ci/importlib-metadata_1631916885413/work
 intel_tensorflow==2.6.0
 ipykernel @ file:///C:/ci/ipykernel_1596206775157/work/dist/ipykernel-5.3.4-py3-none-any.whl
@@ -77,14 +81,18 @@ prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
 protobuf==3.19.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+pycodestyle==2.8.0
 pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
 Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
 pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
 pyrsistent @ file:///C:/ci/pyrsistent_1600141799440/work
+PySocks @ file:///C:/ci/pysocks_1605305839978/work
 python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
 pytz==2021.3
 pywin32==228
 pywinpty==0.5.7
+PyYAML==5.4.1
 pyzmq @ file:///C:/ci/pyzmq_1628276569449/work
 requests==2.27.1
 requests-oauthlib==1.3.1
@@ -92,6 +100,7 @@ rsa==4.8
 scikit-learn @ file:///C:/ci/scikit-learn_1622739439730/work
 scipy @ file:///C:/ci/scipy_1597675683670/work
 seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+selenium @ file:///C:/ci/selenium_1614268400261/work
 Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
 six @ file:///C:/ci/six_1605187303045/work
 tb-nightly==2.9.0a20220208
@@ -106,15 +115,17 @@ termcolor==1.1.0
 terminado==0.9.4
 testpath @ file:///tmp/build/80754af9/testpath_1624638946665/work
 threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+toml==0.10.2
 tornado @ file:///C:/ci/tornado_1606942379977/work
 tqdm @ file:///tmp/build/80754af9/tqdm_1635330843403/work
 traitlets @ file:///C:/ci/traitlets_1632759765830/work
-typing-extensions==3.7.4.3
-urllib3==1.26.8
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1631814937681/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
 utm==0.7.0
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 webencodings==0.5.1
 Werkzeug @ file:///tmp/build/80754af9/werkzeug_1635505089296/work
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306197271/work
 wincertstore==0.2
 wrapt==1.12.1
 zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work
