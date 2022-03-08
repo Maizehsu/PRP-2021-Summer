@@ -15,7 +15,7 @@
 \author{徐麦 \and 刘创}
 \title{基于网约车轨迹数据的路网拥堵识别及预测}
 \subtitle{第40期PRP结题答辩}
-\institute{上海交通大学密西根学院}
+\institute{上海交通大学密西根学院 \newline \newline 指导老师: 高林杰}
 \date{2022年3月9日}
 \usepackage{SJTU}
 
@@ -128,14 +128,6 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{数据特征分析：邻域连贯性}
-    \par 将预处理后数据后得到的\alert{网格平均速度值}，呈现出\alert{邻域连贯性}：
-    \\ \hspace*{\fill} \\
-    \par 根据Chen的研究\footfullcite{PCNN}，一个交通网格在某一时刻的网格速度与其在空间和时间上邻近的网格的差距在一定的距离范围内可视为是连贯的。这是因为大部分时间段的交通状况很少出现突变的情况。
-    \\ \hspace*{\fill} \\
-    \par 因此我们认为，同时考虑\alert{一定时空邻域内的所有数据}对于预测某个时空网格的数据是有帮助的。
-\end{frame}
-
 \begin{frame}{数据特征分析：周期性}
     \begin{figure}
         \centering
@@ -145,9 +137,17 @@
     \end{figure}
     \begin{itemize}
         \item 每周每天相同时间的平均速度趋势相似，呈现\alert{周期性}。
-        \item 相邻几天相同时间的平均速度趋势相似，呈现\alert{邻域连贯性}。
+        \item 相邻几天相同时间的平均速度趋势相似，呈现\alert{邻域连贯性\footfullcite{PCNN}}。
         \item 平均车速折线两端\alert{局部最低}分别对应\alert{早晚高峰}（7-9；16-18）。
 \end{itemize}
+\end{frame}
+
+\begin{frame}{数据特征分析：邻域连贯性}
+    \par 将预处理后数据后得到的\alert{网格平均速度值}，呈现出\alert{邻域连贯性}：
+    \\ \hspace*{\fill} \\
+    \par 根据Chen的研究\footfullcite{PCNN}，一个交通网格在某一时刻的网格速度与其在空间和时间上邻近的网格的差距在一定的距离范围内可视为是连贯的。这是因为大部分时间段的交通状况很少出现突变的情况。
+    \\ \hspace*{\fill} \\
+    \par 因此我们认为，同时考虑\alert{一定时空邻域内的所有数据}对于预测某个时空网格的数据是有帮助的。
 \end{frame}
 
 % ------------------------------ %
@@ -178,7 +178,6 @@
     
     \begin{block}{数据裁剪}
         \begin{itemize}
-            \item 本项目的研究区域是一个15*15的网格。我们采用长宽均为10的正方形滑动窗口对空间网格进行裁剪，是数据量增加到原来的6*6=36倍。
             \item 目的：使CNN捕捉到数据在\alert{空间上的相关性}；扩大训练数据量
         \end{itemize}
     \end{block}
